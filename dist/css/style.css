@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Lato:400i");
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.mb-xs {
+  margin-bottom: 1rem; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-xl {
+  margin-bottom: 8rem; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "lato";
+  font-weight: 400; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic; }
+  .heading-2--light {
+    color: #ccc; }
+  .heading-2--dark {
+    color: #777; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #3C2670;
+  text-transform: uppercase; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #ccc; }
+  .heading-4--dark {
+    color: #777; }
+
+.btn {
+  background-color: #3C2670;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "lato";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #a72167;
+    color: #fff; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Comfortaa", cursive;
+  color: var(--color-grey-dark);
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10.6rem 75vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] minmax(6rem, 1fr) [full-end]; }
+
+.about {
+  background-color: #251155;
+  color: #fff;
+  grid-column: full-start / full-end; }
+
+.edu {
+  background-color: #7865A5;
+  color: #fff;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: #3C2670;
+  color: #fff;
+  grid-column: full-start / full-end; }
+
+.form {
+  background-color: #777;
+  color: #fff;
+  grid-column: 1 / -1; }
+
+.header {
+  background-color: #3C2670;
+  color: #fff;
+  grid-column: full-start / full-end; }
+
+.navbar {
+  background-color: #ccc;
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2; }
+
+.story__pictures {
+  background-color: #251155;
+  color: #fff;
+  grid-column: 1 / 6; }
+
+.story__content {
+  background-color: #ccc;
+  grid-column: 6 / 11;
+  padding: 6rem 6vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic; }

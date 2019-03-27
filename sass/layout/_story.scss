@@ -1,0 +1,29 @@
+.story {
+
+  &__pictures {
+    background-color: $color-primary-3;
+    color: $color-white;
+    grid-column: 1 / 6;
+  }
+
+  &__content {
+    background-color: $color-grey-light;
+    grid-column: 6 / 11;
+
+    padding: 6rem 6vw;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}

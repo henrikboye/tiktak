@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Lato:400i');
+
+// font-famlily
+$font-primary: 'Comfortaa',
+cursive;
+$font-display: 'lato';
+// font size
+$default-font-size: 1.6rem;
+
+// Main Primary color 
+$color-primary-0: #3C2670;
+$color-primary-1: #7865A5;
+$color-primary-2: #543E87;
+$color-primary-3: #251155;
+$color-primary-4: #140538;
+// secondary color
+$color-secondary-1: #a72167;
+$color-secondary-2: #7569ac;
+$color-secondary-3: #b57db5;
+
+//manly text colors
+$color-grey-dark: #777;
+$color-grey-light: #ccc;
+$color-white: #fff;
+$color-black: #000;
+
+
+$border-radius: 3px;
+
+
+//background image
+// $bg-image: url('../img/paa_plaene.jpg');
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+$box-shadow-black: 0 1.5rem 4rem rgba($color-black, .15);
+
+
+// helper classes
+.mb-xs {
+  margin-bottom: 1rem;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-xl {
+  margin-bottom: 8rem;
+}
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+
+
+  &--light {
+    color: $color-grey-light;
+  }
+
+  &--dark {
+    color: $color-grey-dark;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $color-primary-0;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-grey-light;
+  }
+
+  &--dark {
+    color: $color-grey-dark;
+  }
+}
+
+.btn {
+  background-color: $color-primary-0;
+  color: $color-white;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $color-secondary-1;
+    color: $color-white;
+  }
+}
